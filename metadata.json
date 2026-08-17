@@ -1,0 +1,6 @@
+{
+  "name": "FKG Tahlil - Fonokardiogramma AI",
+  "description": "Shifokorlar uchun fonokardiogramma (PCG) va yurak tovushlarini tahlil qiluvchi mobil AI tizimi",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
