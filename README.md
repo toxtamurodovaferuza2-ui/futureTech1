@@ -1,10 +1,35 @@
 # QALB — Fonokardiografiya (FKG / PCG) va AI Kardiologik Tahlil Tizimi
 
-Ushbu loyiha yurak tovushlari (Fonokardiografiya — FKG / PCG), RMSSD va HRV (Yurak Ritmi O'zgaruvchanligi) dinamikasini real vaqtda tahlil qiluvchi hamda **ESP32 asosidagi "QALB" portativ aqlli stetoskopi** bilan to'liq integratsiyalashgan zamonaviy tibbiy platformadir.
+Ushbu loyiha yurak tovushlari (Fonokardiografiya — FKG / PCG), RMSSD va HRV (Yurak Ritmi O'zgaruvchanligi) dinamikasini real vaqtda tahlil qiluvchi hamda **"FutureTech QALB PCG MONITOR" portativ aqlli stetoskopi** bilan to'liq integratsiyalashgan zamonaviy tibbiy-texnologik platformadir.
 
 ---
 
-## 📸 Saytning Asosiy Sahifalari va Skrinshotlari
+## 🫀 Apparat Ta'minoti — FutureTech QALB PCG Monitor Qurilmasi
+
+Loyiha uchun maxsus ishlab chiqilgan, ESP32 mikrokontrolleri, rangli LCD displey, I2S raqamli akustik mikrofon va akustik stetoskop membranasi bilan jihozlangan portativ apparat moduli:
+
+### 1. FutureTech QALB PCG Monitor (To'liq apparat majmuasi)
+> Portativ korpus, rangli LCD displey, boshqaruv tugmasi va silikon halqali yuqori sezuvchan akustik stetoskop datchigi.
+
+![FutureTech QALB PCG Monitor Qurilmasi](src/assets/images/qalb_hardware_pcg_monitor_1786966510527.jpg)
+
+---
+
+### 2. Qurilmaning O'rnatilgan LCD Displeyi (Real-Vaqt PCG Signali)
+> Ekrandagi ko'rsatkichlar: **Yurak urishi soni**, **Ritm holati (Tekis / Notekis)**, **PCG jonli signali** va amplituda spektrining real vaqt dinamikasi.
+
+![Qurilma LCD Displeyi](src/assets/images/qalb_hardware_screen_closeup_1786966522862.jpg)
+
+---
+
+### 3. Akustik Stetoskop Datchigi (Sensor Boshchasi)
+> Yurakning past va yuqori chastotali tonlarini (S1—S4) va shovqinlarini aniq ushlab oluvchi membranali akustik boshcha.
+
+![Akustik Stetoskop Datchigi](src/assets/images/qalb_hardware_sensor_head_1786966535367.jpg)
+
+---
+
+## 📸 Veb-Platforma Interfeysi va Skrinshotlari
 
 ### 1. Fonokardiogramma (FKG) To'lqin Shakli va Spektrogramma
 > Yurak tonlari ($S_1, S_2, S_3, S_4$), real-vaqtda akustik ossilloskop to'lqini, 20—800 Hz FFT chastota spektri va raqamli DSP filtrlash rejimlari (*Mitral, Aortal, Diastolik*).
@@ -64,7 +89,7 @@ Ushbu loyiha yurak tovushlari (Fonokardiografiya — FKG / PCG), RMSSD va HRV (Y
 - **Frontend**: React 18, TypeScript, Tailwind CSS, Lucide Icons, Recharts, Motion
 - **Backend / API**: Node.js, Express, Google GenAI SDK (`@google/genai`), esbuild
 - **Audio & DSP**: Web Audio API, Fast Fourier Transform (FFT), STFT Hann Window
-- **Apparat Ta'minoti**: ESP32, I2S Digital Microphone, Wi-Fi Telemetriya
+- **Apparat Ta'minoti**: ESP32, TFT/LCD Displey, I2S Raqamli Mikrofon, Wi-Fi Telemetriya, Akustik Membrana
 
 ---
 
